@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Practise</title>
+    </head>
+    <body background="bgcolor.jpg">
+            <h3>
+            
+                <a href="home.html" style="color:white"> <img src="logo.png" alt="logo" width="420" height="315"></a>
+      
+            <table align="right" border="5" >
+                
+                <tr style="font-size:30px">
+                   <th>&nbsp&nbsp&nbsp&nbsp<a href="home.html" style="color:white">Home</a>&nbsp&nbsp&nbsp&nbsp</th>
+                    <th>&nbsp&nbsp&nbsp&nbsp<a href="product.html" style="color:white">Products</a>&nbsp&nbsp&nbsp&nbsp </th>
+                    <th>&nbsp&nbsp&nbsp&nbsp<a href="review.html" style="color:white">Reviews</a>&nbsp&nbsp&nbsp&nbsp</th>
+                    <th>&nbsp&nbsp&nbsp&nbsp<a href="contact.html" style="color:white">Contact Us</a>&nbsp&nbsp&nbsp&nbsp </th>
+                </tr>
+            </table>
+        </h3>
+        <center>
+            <u> <h1 style="font-size:90px;color: antiquewhite"><i>Shopify Big Billion Day Sale</i></h1></u> <audio controls autoplay src="bgsound.mp3"></audio>
+            <h2 style="color:#fac078; font-size:40px" align="center"><u>Sale ends in:</u></h2>
+             <h1 id="demo" style="color:antiquewhite; font-size:40px" align="center"></h1>
+        <marquee><h1 style="color: hsl(141, 91%, 64%)">Great Deals on Amazing Products!..  Shop Now</h1>
+        </marquee>
+            <a href="https://www.boat-lifestyle.com/" style="color:white"><img src="ads.png"  alt="ad" width="1000" height="980" ></a>
+            <a href="https://www.titan.co.in/shop/smart" style="color:white"><img src="watch.jpg"  alt="ad" width="1000" height="600"> </a>
+            <a href="https://www.amazon.in/Redmi-Activ-Coral-Green-Storage/dp/B09GFLFMPS/ref=lp_1389401031_1_6" style="color:white"> <img src="redmi.jpg"  alt="ad" width="1000" height="600"></a> 
+            <a href="https://beardo.in/" style="color:white"> <img src="beadr.png"  alt="ad" width="1000" height="600"></a> 
+            <a href="https://www.amazon.in/David-Beckham-Classic-Toilette-90ml/dp/B00EUEDEAK" style="color:white"> <img src="ad.jpg"  alt="ad" width="1000" height="600"></a> 
+           </center>
+       </br>
+        <footer align="center" style="color:white">&copy; Nitish Adi Reddy 2022 PGS</footer>
+        <script>
+    
+            var countDownDate = new Date("Sep 19, 2022 12:30:25").getTime();
+            
+            
+            var x = setInterval(function() {
+            
+            
+              var now = new Date().getTime();
+            
+              
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+            
+              
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "Sale is done";
+              }
+            }, 1000);
+            </script>
+        </body>
+        </html>
